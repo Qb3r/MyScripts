@@ -24,11 +24,11 @@ read project_name
 
 echo '--------------------------------------------------------------------------------------------------'
 
-if [ ! -d ~/.reports/$project_name ]; then
+if [ ! -d ~/reports/$project_name ]; then
 
-mkdir ~/.reports/$project_name
+mkdir ~/reports/$project_name
 
-mkdir ~/.reports/$project_name/nmap_scan
+mkdir ~/reports/$project_name/nmap_scan
 
 fi
 
@@ -60,7 +60,7 @@ if [ $choice -eq 1 ]; then
 
 echo -e '\e[5mScript running!!!!\e[1;m'
 
-nmap -sV $param  >> ~/.reports/$project_name/nmap_scan/service-version-nmap.txt
+nmap -sV $param  >> ~/reports/$project_name/nmap_scan/service-version-nmap.txt
 
 clear
 
@@ -70,7 +70,7 @@ echo -e '\e[31mRESULTS:\e[1;m'
 
 echo '--------------------------------------------------------------------------------------------------'
 
-cat ~/.reports/$project_name/nmap_scan/service-version-nmap.txt | grep -i --color=always -e 'open' 
+cat ~/reports/$project_name/nmap_scan/service-version-nmap.txt | grep -i --color=always -e 'open' 
 
 echo '--------------------------------------------------------------------------------------------------'
 
@@ -78,7 +78,7 @@ elif [ $choice -eq 2 ]; then
 
 echo -e '\e[5mScript running!!!!\e[1;m'
 
-nmap --script ssl-enum-ciphers -p 443 www.$param  >> ~/.reports/$project_name/nmap_scan/tls-version-nmap.txt
+nmap --script ssl-enum-ciphers -p 443 www.$param  >> ~/reports/$project_name/nmap_scan/tls-version-nmap.txt
 
 clear
 
@@ -88,7 +88,7 @@ echo -e '\e[31mRESULTS:\e[1;m'
 
 echo '--------------------------------------------------------------------------------------------------'
 
-cat ~/.reports/$project_name/nmap_scan/tls-version-nmap.txt | grep -i --color=always -e 'TLSv' -e 'open' 
+cat ~/reports/$project_name/nmap_scan/tls-version-nmap.txt | grep -i --color=always -e 'TLSv' -e 'open' 
 
 echo '--------------------------------------------------------------------------------------------------'
 
@@ -96,7 +96,7 @@ elif [ $choice -eq 3 ]; then
 
 echo -e '\e[5mScript running!!!!\e[1;m'
 
-sudo nmap -O $param  >> ~/.reports/$project_name/nmap_scan/os-detection-nmap.txt
+sudo nmap -O $param  >> ~/reports/$project_name/nmap_scan/os-detection-nmap.txt
 
 clear
 
@@ -106,7 +106,7 @@ echo -e '\e[31mRESULTS:\e[1;m'
 
 echo '--------------------------------------------------------------------------------------------------'
 
-cat ~/.reports/$project_name/nmap_scan/os-detection-nmap.txt | grep -i --color=always -e 'OSScan' -e 'OS CPE' -e 'Aggressive OS guesses'
+cat ~/reports/$project_name/nmap_scan/os-detection-nmap.txt | grep -i --color=always -e 'OSScan' -e 'OS CPE' -e 'Aggressive OS guesses'
 
 echo '--------------------------------------------------------------------------------------------------'
 
@@ -114,7 +114,7 @@ elif [ $choice -eq 4 ]; then
 
 echo -e '\e[5mScript running!!!!\e[1;m'
 
-nmap -A $param  >> ~/.reports/$project_name/nmap_scan/agressive-nmap.txt
+nmap -A $param  >> ~/reports/$project_name/nmap_scan/agressive-nmap.txt
 
 clear
 
@@ -124,7 +124,7 @@ echo -e '\e[31mRESULTS:\e[1;m'
 
 echo '--------------------------------------------------------------------------------------------------'
 
-cat ~/.reports/$project_name/nmap_scan/agressive-nmap.txt | grep -i --color=always -e 'open' -e 'http-server-header' -e 'http-title' -e 'ssl-cert' -e 'valid'
+cat ~/reports/$project_name/nmap_scan/agressive-nmap.txt | grep -i --color=always -e 'open' -e 'http-server-header' -e 'http-title' -e 'ssl-cert' -e 'valid'
 
 
 echo '--------------------------------------------------------------------------------------------------'
@@ -133,7 +133,7 @@ elif [ $choice -eq 5 ]; then
 
 echo -e '\e[5mScript running!!!!\e[1;m'
 
-nmap -vv -A $param  >> ~/.reports/$project_name/nmap_scan/verobse-agressive-nmap.txt
+nmap -vv -A $param  >> ~/reports/$project_name/nmap_scan/verobse-agressive-nmap.txt
 
 clear
 
@@ -143,7 +143,7 @@ echo -e '\e[31mRESULTS:\e[1;m'
 
 echo '--------------------------------------------------------------------------------------------------'
 
-cat ~/.reports/$project_name/nmap_scan/agressive-nmap.txt | grep -i --color=always -e 'open' -e 'http-server-header' -e 'http-title' -e 'ssl-cert' -e 'valid'
+cat ~/reports/$project_name/nmap_scan/agressive-nmap.txt | grep -i --color=always -e 'open' -e 'http-server-header' -e 'http-title' -e 'ssl-cert' -e 'valid'
 
 echo '--------------------------------------------------------------------------------------------------'
 
@@ -167,7 +167,7 @@ read search_name
 
 echo '--------------------------------------------------------------------------------------------------'
 
-ls -ltrh ~/.reports/$search_name/nmap_scan
+ls -ltrh ~/reports/$search_name/nmap_scan
 
 echo '--------------------------------------------------------------------------------------------------'
 
