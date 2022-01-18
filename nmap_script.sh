@@ -4,7 +4,7 @@ echo '--------------------------------------------------------------------------
 
 #pipelining 
 
-figlet -t -k -f slant Nmap Scans Script | lolcat -S 2 -a -s 50
+figlet -t -k -f slant Nmap Scans Script by Qb3r | lolcat -S 2 -a -s 50
 
 echo '--------------------------------------------------------------------------------------------------'
 
