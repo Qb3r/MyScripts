@@ -181,23 +181,23 @@ echo '--------------------------------------------------------------------------
 
 if [ $search_choice -eq 1 ];then
 
-cat ~/.reports/$search_name/nmap_scan/service-version-nmap.txt | grep -i --color=always -e 'open'
+cat ~/reports/$search_name/nmap_scan/service-version-nmap.txt | grep -i --color=always -e 'open'
 
 elif [ $search_choice -eq 2 ];then
 
-cat ~/.reports/$search_name/nmap_scan/tls-version-nmap.txt | grep -i --color=always -e 'TLSv' -e 'open' 
+cat ~/reports/$search_name/nmap_scan/tls-version-nmap.txt | grep -i --color=always -e 'TLSv' -e 'open' 
 
 elif [ $search_choice -eq 3 ];then
 
-cat ~/.reports/$search_name/nmap_scan/os-detection-nmap.txt | grep -i --color=always -e 'OSScan' -e 'OS CPE' -e 'Aggressive OS guesses'
+cat ~/reports/$search_name/nmap_scan/os-detection-nmap.txt | grep -i --color=always -e 'OSScan' -e 'OS CPE' -e 'Aggressive OS guesses'
 
 elif [ $search_choice -eq 4 ];then
 
-cat ~/.reports/$search_name/nmap_scan/agressive-nmap.txt | grep -i --color=always -e 'open' -e 'http-server-header' -e 'http-title' -e 'ssl-cert' -e 'valid'
+cat ~/reports/$search_name/nmap_scan/agressive-nmap.txt | grep -i --color=always -e 'open' -e 'http-server-header' -e 'http-title' -e 'ssl-cert' -e 'valid'
 
 elif [ $search_choice -eq 5 ];then
 
-cat ~/.reports/$search_name/nmap_scan/agressive-nmap.txt | grep -i --color=always -e 'open' -e 'http-server-header' -e 'http-title' -e 'ssl-cert' -e 'valid'
+cat ~/reports/$search_name/nmap_scan/agressive-nmap.txt | grep -i --color=always -e 'open' -e 'http-server-header' -e 'http-title' -e 'ssl-cert' -e 'valid'
 
 else 
 
