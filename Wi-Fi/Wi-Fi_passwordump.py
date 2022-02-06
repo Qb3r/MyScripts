@@ -37,6 +37,6 @@ for x in profiles:
         except IndexError:
             print("{:<30}| {:<}".format(x, ""))
              
-     
+    
     except subprocess.CalledProcessError:
         print("Encoding Error Occured")
