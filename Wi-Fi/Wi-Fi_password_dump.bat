@@ -3,6 +3,8 @@
 setlocal enabledelayedexpansion
 
 :main
+
+    color 02
     title Wi-Fi_Password_Dump     
     echo.
     echo Dumping all saved WiFi passwords into WifiDumpData.txt
