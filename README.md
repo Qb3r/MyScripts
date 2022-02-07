@@ -17,3 +17,7 @@ Script making is fun!
     A Script that reads all the Wi-Fis stored in your machine and dumps the SSID and passwords in a file.
 
     - [Steps to create an "exe" of this script](https://github.com/Qb3r/MyScripts/blob/main/Wi-Fi/Create_exe_from_py.md)
+
+- [Wi-Fi Data Dump (Batch Script)]()
+
+    A Script that reads all the Wi-Fis stored in your machine and dumps the SSID and passwords in a file.
