@@ -15,3 +15,5 @@ Script making is fun!
 - [Wi-Fi Data Dump(Python)](https://github.com/Qb3r/MyScripts/blob/main/Wi-Fi/Wi-Fi_passwordump.py)
 
     A Script that reads all the Wi-Fis stored in your machine and dumps the SSID and passwords in a file.
+
+    - [Steps to create an "exe" of this script]()
