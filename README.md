@@ -1,5 +1,5 @@
 # MyScripts
-Script making is fun!
+Making Python and Bash Scripts for Learning and Minor Use Cases
 
 ✌
 
